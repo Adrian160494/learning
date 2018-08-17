@@ -45,14 +45,24 @@
     </div>
 </header>
 <main>
-    <section id="thanks-banner">
-        <div class="thanks-banner-container">
-            <div class="thanks-banner-text">
-                <h1>Dziękujemy!</h1>
-                <p>Na Twojego maila zostało wysłane potwierdzenie założenia konta.</p>
-                <p>Nie dostałeś maila? Kliknij <a href="#">tutaj</a></p>
-                <p class="inforamtion">Zaloguj sie i korzystaj z darmowego konta.</p>
-                <button class="btn-orange"> Przejdz do strony logowania</button>
+    <section id="login-form">
+        <div class="login-form-container">
+            <div class="login-panel">
+                <div class="login-header text-center">
+                    <h1>Logowanie</h1>
+                </div>
+                <form>
+                    <div class="form-group custom-form-group">
+                        <input type="text" name="email" class="custom-form-input" placeholder="E-mail"/>
+                    </div>
+                    <div class="form-group custom-form-group">
+                        <input type="password" class="custom-form-input" placeholder="Hasło"/>
+                        <button class="custom-submit-button" type="submit">Zaloguj się</button>
+                    </div>
+                </form>
+                <div class="login-footer text-center">
+                    <span>Nie masz konta?</span><a href="#"><button class="btn-white-border">Zarejestruj się</button></a>
+                </div>
             </div>
         </div>
     </section>

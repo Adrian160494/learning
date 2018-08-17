@@ -6,4 +6,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-l
 
-RewriteRule ^(.+)$ rejestracja.phtml [QSA,L]
+RewriteRule ^(.+)$ index.html [QSA,L]
