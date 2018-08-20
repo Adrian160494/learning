@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width; initial-scale=1"/>
     <title>Title</title>
-    <link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7-dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="bootstrap/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="../bootstrap/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="bootstrap/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 </head>
 <body>
 <header>
     <div class="wrapper">
         <div class="logo">
-            <img class="logo-img" src="../img/logo.png"/>
+            <img class="logo-img" src="img/logo.png"/>
         </div>
         <div class="menu-wrapper">
             <div class="main-menu">
@@ -27,41 +28,110 @@
                 </div>
                 <div class="main-menu-collapse-list" id="main-menu-list">
                     <ul class="main-menu-list">
-                        <li class="special">KUP TERAZ!</li>
-                        <li>PRODUKTY</li>
-                        <li>PARTNERZY</li>
-                        <li>KONTAKT</li>
-                        <li>ZAREJESTRUJ SIE</li>
+                        <li>Filmy</li>
+                        <li>Twoje postępy</li>
+                        <li>Zarządzanie</li>
+                        <li>Ustawienia</li>
                     </ul>
                 </div>
             </div>
             <div class="logging-menu">
                 <ul class="logging-menu-list">
-                    <li><img src="../img/koszyk.png"/> SKLEP </li>
-                    <li><img src="../img/user.png"/> LOGOWANIE</li>
+                    <li><img src="img/koszyk.png"/> SKLEP </li>
+                    <li><img src="img/scenary.png" width="18px"/>Scenariusze</li>
+                    <li><img src="img/user.png" width="18px"/> Wyloguj siE</li>
                 </ul>
             </div>
         </div>
     </div>
 </header>
 <main>
-    <section id="login-form">
-        <div class="login-form-container">
-            <div class="login-panel">
-                <div class="login-header text-center">
-                    <h1>Logowanie</h1>
+    <section id="admin-panel">
+        <div class="admin-panel-container">
+            <div class="container admin-panel-content">
+                <div class="admin-panel-header text-left">
+                    <h1> Cześć, imię</h1>
                 </div>
-                <form>
-                    <div class="form-group custom-form-group">
-                        <input type="text" name="email" class="custom-form-input" placeholder="E-mail"/>
+                <div class="admin-panel-blocks">
+                    <div class="col-md-6 admin-panel-statistic">
+                       <div class="admin-panel-statistic-header" >
+                           <h1>Twoje wyniki</h1>
+                       </div>
+                        <div class="admin-panel-statistic-body"  id="admin-panel-statistic">
+                            <div class="section-counter">
+                                <div class="row">
+                                    <div class="my-progress-bar" id="my-progress-bar1"> <div class="progress-bar-background"></div></div>
+                                    <h3>LEAN</h3>
+                                </div>
+
+                            </div>
+                            <div class="section-counter">
+                                <div class="row">
+                                    <div class="my-progress-bar" id="my-progress-bar2"> <div class="progress-bar-background"></div></div>
+                                    <h3>SIX SIGMA</h3>
+                                </div>
+
+                            </div>
+                            <div class="section-counter">
+                                <div class="row">
+                                    <div class="my-progress-bar" id="my-progress-bar3"> <div class="progress-bar-background"></div></div>
+                                    <h3>JAKOŚĆ</h3>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group custom-form-group">
-                        <input type="password" class="custom-form-input" placeholder="Hasło"/>
-                        <button class="custom-submit-button" type="submit">Zaloguj się</button>
+                    <div class="col-md-6 admin-panel-statistic">
+                        <div class="admin-panel-statistic-header">
+                            <h1>Wyniki użytkowników</h1>
+                        </div>
+                        <div class="admin-panel-statistic-body">
+                              <div class="table-view text-center">
+                                  <table class="table">
+                                      <thead>
+                                      <tr>
+                                          <td></td><td>LEAN</td><td>SIX SIGMA</td><td>JAKOŚĆ</td>
+                                      </tr>
+                                      </thead>
+                                      <tbody>
+                                      <tr>
+                                          <td>Józef</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Józef</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Józef</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Józef</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Józef</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td>
+                                      </tr>
+
+                                      </tbody>
+                                  </table>
+                                  <div class="drop-down-menu text-center">
+                                      <img src="img/drop-down-arrow.png"/>
+                                  </div>
+                              </div>
+                        </div>
                     </div>
-                </form>
-                <div class="login-footer text-center">
-                    <span>Nie masz konta?</span><a href="#"><button class="btn-white-border">Zarejestruj się</button></a>
+                </div>
+            </div>
+            <div class="admin-panel-footer">
+                <div class="admin-panel-footer-header">
+                    <h1>Kontynuuj lekcje</h1>
+                </div>
+                <div class="admin-panel-slider">
+                    <div class="slider-elements">
+                        <img src="img/slider/slide1.png"/>
+                        <img src="img/slider/slide2.png"/>
+                        <img src="img/slider/slide3.png"/>
+                        <img src="img/slider/slide4.png"/>
+                        <img src="img/slider/slide5.png"/>
+                    </div>
                 </div>
             </div>
         </div>

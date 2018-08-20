@@ -4,6 +4,7 @@
 
 $(window).on('load',function () {
      changeAdventageView();
+    addHandleCheckboxesInRegisterAdmin()
 })
 
 $(document).ready(function () {
@@ -42,6 +43,57 @@ $(document).ready(function () {
 
 
 });
+
+$(document).ready(function() {
+    var flag = true;
+    var windowWidth = $(window).outerWidth();
+    if(windowWidth > 600){
+        addCounters();
+        flag = false;
+    } else if(windowWidth < 600){
+        addCounters();
+        flag = true;
+    }
+    addCounters();
+        $(window).resize(function () {
+            if($(window).outerWidth() > 600 ){
+                addCounters();
+                flag = false;
+            } else if($(window).outerWidth() < 600){
+                addCounters();
+                flag = true;
+            }
+        })
+
+
+});
+
+function addCounters() {
+    $("#my-progress-bar1").circularProgress({
+        line_width: 5,
+        color: "#fff",
+        starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
+        percent: 0, // percent starts from
+        percentage: true,
+        text: "30/30"
+    }).circularProgress('animate', 100, 1000);
+    $("#my-progress-bar2").circularProgress({
+        line_width: 5,
+        color: "#fff",
+        starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
+        percent: 0, // percent starts from
+        percentage: true,
+        text: "27/30"
+    }).circularProgress('animate', 85, 1000);
+    $("#my-progress-bar3").circularProgress({
+        line_width: 5,
+        color: "#fff",
+        starting_position: 0, // 12.00 o' clock position, 25 stands for 3.00 o'clock (clock-wise)
+        percent: 0, // percent starts from
+        percentage: true,
+        text: "5/30"
+    }).circularProgress('animate', 17, 1000);
+}
 
 function activeVideoButtonFirst() {
     $('.video-block').each(function () {
@@ -87,5 +139,37 @@ function changeAdventageView() {
         $(this).animate({
             width: '55%'
         },200,'linear');
+    })
+}
+
+
+function checkActivityButton() {
+    $('.register-admin-btns button').each(function () {
+        if($(this).hasClass('btn-white-border-active')){
+            $(this).removeClass('btn-white-border-active');
+            var name = $(this).attr('value');
+            $("input[name='"+name+"']").prop('checked',false);
+        }
+    })
+}
+
+
+function addHandleCheckboxesInRegisterAdmin(){
+    $('.register-admin-btns button').each(function () {
+        $(this).on('click',function () {
+            if($(this).hasClass('btn-white-border-active')){
+                var name = $(this).attr('value');
+                console.log('input[name="'+name+'"]');
+                $(this).removeClass('btn-white-border-active');
+                $("input[name='"+name+"']").prop('checked',false);
+            } else {
+                var name = $(this).attr('value');
+                checkActivityButton();
+                console.log('input[name="'+name+'"]');
+                $(this).addClass('btn-white-border-active');
+                $("input[name='"+name+"']").prop('checked',true);
+            }
+
+        })
     })
 }

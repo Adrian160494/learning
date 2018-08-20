@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../bootstrap/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <div class="logo">
+            <img class="logo-img" src="../img/logo.png"/>
+        </div>
+        <div class="menu-wrapper">
+            <div class="main-menu">
+                <div class="main-menu-collapse-btns">
+                    <button class="main-menu-collapse-btn pull-right">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="main-menu-collapse-list" id="main-menu-list">
+                    <ul class="main-menu-list">
+                        <li class="special">KUP TERAZ!</li>
+                        <li>PRODUKTY</li>
+                        <li>PARTNERZY</li>
+                        <li>KONTAKT</li>
+                        <li>ZAREJESTRUJ SIE</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logging-menu">
+                <ul class="logging-menu-list">
+                    <li><img src="../img/koszyk.png"/> SKLEP </li>
+                    <li><img src="../img/user.png"/> LOGOWANIE</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section id="register-admin-form">
+        <div class="register-admin-form-container">
+            <div class="register-admin-panel">
+                <div class="register-admin-header text-center">
+                    <h1>Rejestracja Administratora</h1>
+                </div>
+                <div class="register-admin-form">
+                    <form>
+                        <div class="form-group custom-form-group">
+                            <input type="text" name="email" class="custom-form-input" placeholder="E-mail"/>
+                            <div class="custom-form-error">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="form-group custom-form-group">
+                            <input type="text" name="name" class="custom-form-input" placeholder="Imię"/>
+                            <div class="custom-form-error">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="form-group custom-form-group">
+                            <input type="password" name="password" class="custom-form-input" placeholder="Hasło"/>
+                            <div class="custom-form-error">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="form-group custom-form-group">
+                            <input type="password" name="password-repeat" class="custom-form-input" placeholder="Powtórz Hasło"/>
+                            <div class="custom-form-error">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="form-group custom-form-group">
+                            <input type="text" name="company_name" class="custom-form-input" placeholder="Nazwa Firmy"/>
+                            <div class="custom-form-error">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="form-group custom-form-group">
+                            <input type="text" name="company-city" class="custom-form-input" placeholder="Miejscowość"/>
+                            <div class="custom-form-error">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="form-group custom-form-group">
+                            <input type="text" name="company-street" class="custom-form-input" placeholder="Ulica"/>
+                            <div class="custom-form-error">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="form-group custom-form-group">
+                            <input type="text" name="company-number-building" class="custom-form-input" placeholder="Numer Budynku"/>
+                            <div class="custom-form-error">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="form-group custom-form-group">
+                            <input type="text" name="compane-number-flat" class="custom-form-input" placeholder="Numer Mieszkania"/>
+                            <div class="custom-form-error">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="form-group custom-form-group">
+                            <input type="text" name="compane-nip" class="custom-form-input" placeholder="NIP"/>
+                            <div class="custom-form-error">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="form-group custom-form-group">
+                            <input type="text" name="compane-krs" class="custom-form-input" placeholder="KRS"/>
+                            <div class="custom-form-error">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="form-group custom-form-group">
+                            <input type="text" name="compane-area-code" class="custom-form-input" placeholder="Kod Pocztowy"/>
+                            <div class="custom-form-error">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="form-group custom-form-group">
+                            <select class="custom-form-input">
+                                <option value="Rodzaj rozliczenia">Rodzaj rozliczenia</option>
+                                <option value="abonament_miesieczny">Miesięczny ze zobowiązaniem rocznym.</option>
+                                <option value="abonament_roczny">Jednorazowa opłata roczna.</option>
+                            </select>
+                            <div class="custom-form-error">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="form-group text-center register-form-group">
+                            <h2>Wybierz forme płatności</h2>
+                            <div class="register-admin-btns">
+                                <button type="button" value="Karta" class="btn-white-border">Karta</button>
+                                <input type="checkbox" name="Karta" hidden/>
+                                <button type="button" value="Paypal" class="btn-white-border">Paypal</button>
+                                <input type="checkbox" name="Paypal"  hidden/>
+                                <button type="button" value="Przelew" class="btn-white-border">Przelew</button>
+                                <input type="checkbox" name="Przelew" hidden />
+                            </div>
+                            <div class="custom-form-error">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="form-group custom-form-group register-form-group text-center">
+                            <a class="custom-submit-button" type="submit">Zarejestruj</a>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer-container">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="col-md-8 col-sm-12 col-xs-12 footer-lists">
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <h1>PRODUKTY</h1>
+                        <ul>
+                            <li>Informacje</li>
+                            <li>O produkcie</li>
+                            <li>Cena</li>
+                            <li>Pakiety</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <h1>PARTNERZY</h1>
+                        <ul>
+                            <li>Mapa</li>
+                            <li>Nazwa firmy</li>
+                            <li>Nazwa firmy</li>
+                            <li>Nazwa firmy</li>
+                            <li>Nazwa firmy</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3 text-center">
+                        <h1>SKLEP</h1>
+                        <ul>
+                            <li>Sklep</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <h1>KONTAKT</h1>
+                        <ul>
+                            <li>NAZWA</li>
+                            <li>ul.Nazwa ulicy 12</li>
+                            <li>00-000 Miasto</li>
+                            <br/>
+                            <li>Mapa</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 footer-banner">
+                    <div class="footer-logo">
+                        <img src="../img/logo.png" width="50%"/>
+                    </div>
+
+                    <div class="footer-text">
+                        <p>Opex Academy 2018</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

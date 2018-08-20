@@ -99,6 +99,7 @@ body {
           border-bottom-right-radius: 20px; } }
       body header .wrapper .menu-wrapper .main-menu .main-menu-collapse-list .main-menu-list li {
         padding: 10px;
+        text-transform: uppercase;
         cursor: pointer;
         font-weight: bolder;
         color: var(--special-font-color);
@@ -124,6 +125,7 @@ body {
           body header .wrapper .menu-wrapper .logging-menu .logging-menu-list {
             display: none; } }
         body header .wrapper .menu-wrapper .logging-menu .logging-menu-list li {
+          text-transform: uppercase;
           padding: 10px;
           cursor: pointer;
           color: var(--orange);
@@ -956,6 +958,531 @@ body {
           letter-spacing: 1.5px;
           line-height: 30px;
           margin-bottom: 40px; } }
+  body #register-admin-form .register-admin-form-container {
+    position: relative;
+    background-size: cover;
+    background: url("../img/rejestracja_pelna_back.png");
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    body #register-admin-form .register-admin-form-container .register-admin-panel {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 50px;
+      margin-top: 50px; }
+      body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-header h1 {
+        color: white;
+        margin: 0;
+        text-transform: uppercase; }
+        @media screen and (max-width: 320px) {
+          body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-header h1 {
+            font-size: 35px; } }
+        @media screen and (min-width: 320px) and (max-width: 468px) {
+          body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-header h1 {
+            font-size: 35px; } }
+        @media screen and (min-width: 468px) and (max-width: 768px) {
+          body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-header h1 {
+            font-size: 35px; } }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-header h1 {
+            font-size: 40px; } }
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+          body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-header h1 {
+            font-size: 45px; } }
+        @media screen and (min-width: 1200px) and (max-width: 1400px) {
+          body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-header h1 {
+            font-size: 55px; } }
+        @media screen and (min-width: 1400px) {
+          body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-header h1 {
+            font-size: 55px; } }
+      @media screen and (max-width: 320px) {
+        body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-form .custom-form-group {
+          padding: 0 28% !important; } }
+      @media screen and (min-width: 320px) and (max-width: 468px) {
+        body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-form .custom-form-group {
+          padding: 0 26% !important; } }
+      @media screen and (min-width: 468px) and (max-width: 768px) {
+        body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-form .custom-form-group {
+          padding: 0 28% !important; } }
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-form .custom-form-group {
+          padding: 0 30% !important; } }
+      @media screen and (min-width: 992px) and (max-width: 1200px) {
+        body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-form .custom-form-group {
+          padding: 0 31% !important; } }
+      @media screen and (min-width: 1200px) and (max-width: 1400px) {
+        body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-form .custom-form-group {
+          padding: 0 34% !important; } }
+      @media screen and (min-width: 1400px) {
+        body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-form .custom-form-group {
+          padding: 0 35% !important; } }
+      body #register-admin-form .register-admin-form-container .register-admin-panel .register-form-group h2 {
+        color: white; }
+      body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-btns .btn-white-border {
+        width: 200px; }
+      @media screen and (max-width: 320px) {
+        body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-footer {
+          margin-top: 70px; } }
+      @media screen and (min-width: 320px) and (max-width: 468px) {
+        body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-footer {
+          margin-top: 70px; } }
+      @media screen and (min-width: 468px) and (max-width: 768px) {
+        body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-footer {
+          margin-top: 90px; } }
+      body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-footer span, body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-footer small {
+        color: white;
+        font-family: var(--header-font);
+        text-transform: uppercase; }
+        @media screen and (max-width: 320px) {
+          body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-footer span, body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-footer small {
+            font-size: 11px;
+            letter-spacing: 0.5px;
+            line-height: 20px; } }
+        @media screen and (min-width: 320px) and (max-width: 468px) {
+          body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-footer span, body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-footer small {
+            font-size: 13px;
+            letter-spacing: 0.5px;
+            line-height: 20px;
+            margin-bottom: 30px; } }
+        @media screen and (min-width: 468px) and (max-width: 768px) {
+          body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-footer span, body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-footer small {
+            font-size: 13px;
+            letter-spacing: 0.5px;
+            line-height: 20px;
+            margin-bottom: 30px; } }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-footer span, body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-footer small {
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            line-height: 20px; } }
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+          body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-footer span, body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-footer small {
+            font-size: 16px;
+            letter-spacing: 1.5px;
+            line-height: 30px; } }
+        @media screen and (min-width: 1200px) and (max-width: 1400px) {
+          body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-footer span, body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-footer small {
+            font-size: 18px;
+            letter-spacing: 1.5px;
+            line-height: 30px; } }
+        @media screen and (min-width: 1400px) {
+          body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-footer span, body #register-admin-form .register-admin-form-container .register-admin-panel .register-admin-footer small {
+            font-size: 20px;
+            letter-spacing: 1.5px;
+            line-height: 30px; } }
+  body #sections .navigation-search {
+    height: 170px;
+    background: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  body #choose-section {
+    background: url("../img/section-background.png");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    body #choose-section .choose-section-container {
+      color: #fff; }
+      body #choose-section .choose-section-container .choose-section-header {
+        margin-top: 70px;
+        text-align: center;
+        text-transform: uppercase; }
+        body #choose-section .choose-section-container .choose-section-header h1 {
+          color: white;
+          text-transform: uppercase; }
+          @media screen and (max-width: 320px) {
+            body #choose-section .choose-section-container .choose-section-header h1 {
+              font-size: 30px;
+              margin-bottom: 22px; } }
+          @media screen and (min-width: 320px) and (max-width: 468px) {
+            body #choose-section .choose-section-container .choose-section-header h1 {
+              font-size: 30px;
+              margin-bottom: 22px; } }
+          @media screen and (min-width: 468px) and (max-width: 768px) {
+            body #choose-section .choose-section-container .choose-section-header h1 {
+              font-size: 31px;
+              margin-bottom: 22px; } }
+          @media screen and (min-width: 768px) and (max-width: 992px) {
+            body #choose-section .choose-section-container .choose-section-header h1 {
+              font-size: 31px;
+              margin-bottom: 22px; } }
+          @media screen and (min-width: 992px) and (max-width: 1200px) {
+            body #choose-section .choose-section-container .choose-section-header h1 {
+              font-size: 32px;
+              margin-bottom: 22px; } }
+          @media screen and (min-width: 1200px) and (max-width: 1400px) {
+            body #choose-section .choose-section-container .choose-section-header h1 {
+              font-size: 33px;
+              margin-bottom: 25px; } }
+          @media screen and (min-width: 1400px) {
+            body #choose-section .choose-section-container .choose-section-header h1 {
+              font-size: 34px;
+              margin-bottom: 25px; } }
+      body #choose-section .choose-section-container .choose-section-body .choosed-section-player {
+        padding: 10px !important; }
+        body #choose-section .choose-section-container .choose-section-body .choosed-section-player .choose-section-title h1 {
+          text-transform: uppercase; }
+          @media screen and (max-width: 320px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section-player .choose-section-title h1 {
+              font-size: 21px;
+              margin-bottom: 40px; } }
+          @media screen and (min-width: 320px) and (max-width: 468px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section-player .choose-section-title h1 {
+              font-size: 22px;
+              margin-bottom: 40px; } }
+          @media screen and (min-width: 468px) and (max-width: 768px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section-player .choose-section-title h1 {
+              font-size: 23px;
+              margin-bottom: 40px; } }
+          @media screen and (min-width: 768px) and (max-width: 992px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section-player .choose-section-title h1 {
+              font-size: 24px;
+              margin-bottom: 20px; } }
+          @media screen and (min-width: 992px) and (max-width: 1200px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section-player .choose-section-title h1 {
+              font-size: 25px;
+              margin-bottom: 30px; } }
+          @media screen and (min-width: 1200px) and (max-width: 1400px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section-player .choose-section-title h1 {
+              font-size: 26px;
+              margin-bottom: 30px; } }
+          @media screen and (min-width: 1400px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section-player .choose-section-title h1 {
+              font-size: 27px;
+              margin-bottom: 30px; } }
+        @media screen and (max-width: 320px) {
+          body #choose-section .choose-section-container .choose-section-body .choosed-section-player {
+            margin-bottom: 3px; } }
+        @media screen and (min-width: 320px) and (max-width: 468px) {
+          body #choose-section .choose-section-container .choose-section-body .choosed-section-player {
+            margin-bottom: 30px; } }
+        @media screen and (min-width: 468px) and (max-width: 768px) {
+          body #choose-section .choose-section-container .choose-section-body .choosed-section-player {
+            margin-bottom: 30px; } }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          body #choose-section .choose-section-container .choose-section-body .choosed-section-player {
+            margin-bottom: 30px; } }
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+          body #choose-section .choose-section-container .choose-section-body .choosed-section-player {
+            margin-bottom: 50px; } }
+        @media screen and (min-width: 1200px) and (max-width: 1400px) {
+          body #choose-section .choose-section-container .choose-section-body .choosed-section-player {
+            margin-bottom: 50px; } }
+        @media screen and (min-width: 1400px) {
+          body #choose-section .choose-section-container .choose-section-body .choosed-section-player {
+            margin-bottom: 50px; } }
+        body #choose-section .choose-section-container .choose-section-body .choosed-section-player .choose-section-player-description {
+          display: flex;
+          flex-direction: row;
+          border-bottom: 1px solid #ccc;
+          margin-bottom: 10px; }
+          body #choose-section .choose-section-container .choose-section-body .choosed-section-player .choose-section-player-description .player-icon {
+            margin-left: 10px;
+            margin-right: 10px; }
+            body #choose-section .choose-section-container .choose-section-body .choosed-section-player .choose-section-player-description .player-icon img {
+              width: 24px; }
+          body #choose-section .choose-section-container .choose-section-body .choosed-section-player .choose-section-player-description img {
+            width: 12px; }
+      body #choose-section .choose-section-container .choose-section-body .choosed-section {
+        margin-bottom: 70px; }
+        @media screen and (max-width: 320px) {
+          body #choose-section .choose-section-container .choose-section-body .choosed-section {
+            padding: 0 10px; } }
+        @media screen and (min-width: 320px) and (max-width: 468px) {
+          body #choose-section .choose-section-container .choose-section-body .choosed-section {
+            padding: 0 10px; } }
+        @media screen and (min-width: 468px) and (max-width: 768px) {
+          body #choose-section .choose-section-container .choose-section-body .choosed-section {
+            padding: 0 20px; } }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          body #choose-section .choose-section-container .choose-section-body .choosed-section {
+            padding: 0 30px; } }
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+          body #choose-section .choose-section-container .choose-section-body .choosed-section {
+            padding: 0 40px; } }
+        @media screen and (min-width: 1200px) and (max-width: 1400px) {
+          body #choose-section .choose-section-container .choose-section-body .choosed-section {
+            padding: 0 50px; } }
+        @media screen and (min-width: 1400px) {
+          body #choose-section .choose-section-container .choose-section-body .choosed-section {
+            padding: 0 70px; } }
+        body #choose-section .choose-section-container .choose-section-body .choosed-section .choose-section-title h1 {
+          text-transform: uppercase;
+          margin-bottom: 40px; }
+          @media screen and (max-width: 320px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section .choose-section-title h1 {
+              font-size: 21px; } }
+          @media screen and (min-width: 320px) and (max-width: 468px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section .choose-section-title h1 {
+              font-size: 22px; } }
+          @media screen and (min-width: 468px) and (max-width: 768px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section .choose-section-title h1 {
+              font-size: 23px; } }
+          @media screen and (min-width: 768px) and (max-width: 992px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section .choose-section-title h1 {
+              font-size: 24px; } }
+          @media screen and (min-width: 992px) and (max-width: 1200px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section .choose-section-title h1 {
+              font-size: 25px; } }
+          @media screen and (min-width: 1200px) and (max-width: 1400px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section .choose-section-title h1 {
+              font-size: 26px; } }
+          @media screen and (min-width: 1400px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section .choose-section-title h1 {
+              font-size: 27px; } }
+        body #choose-section .choose-section-container .choose-section-body .choosed-section .choose-section-description {
+          margin: 40px 0;
+          font-family: var(--open-sans) !important; }
+        body #choose-section .choose-section-container .choose-section-body .choosed-section .choose-section-statistics p {
+          text-transform: uppercase; }
+          @media screen and (max-width: 320px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section .choose-section-statistics p {
+              font-size: 17px; } }
+          @media screen and (min-width: 320px) and (max-width: 468px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section .choose-section-statistics p {
+              font-size: 17px; } }
+          @media screen and (min-width: 468px) and (max-width: 768px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section .choose-section-statistics p {
+              font-size: 18px; } }
+          @media screen and (min-width: 768px) and (max-width: 992px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section .choose-section-statistics p {
+              font-size: 19px; } }
+          @media screen and (min-width: 992px) and (max-width: 1200px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section .choose-section-statistics p {
+              font-size: 20px; } }
+          @media screen and (min-width: 1200px) and (max-width: 1400px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section .choose-section-statistics p {
+              font-size: 21px; } }
+          @media screen and (min-width: 1400px) {
+            body #choose-section .choose-section-container .choose-section-body .choosed-section .choose-section-statistics p {
+              font-size: 22px; } }
+  body #admin-panel .admin-panel-container {
+    background: url("/img/thanks-banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; }
+    body #admin-panel .admin-panel-container .admin-panel-content {
+      padding: 50px 0; }
+      @media screen and (max-width: 992px) {
+        body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-header {
+          padding: 0 30px; } }
+      body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-header h1 {
+        color: white;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: bolder; }
+        @media screen and (max-width: 320px) {
+          body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-header h1 {
+            font-size: 40px;
+            margin-bottom: 20px; } }
+        @media screen and (min-width: 320px) and (max-width: 468px) {
+          body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-header h1 {
+            font-size: 42px;
+            margin-bottom: 20px; } }
+        @media screen and (min-width: 468px) and (max-width: 768px) {
+          body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-header h1 {
+            font-size: 50px;
+            margin-bottom: 20px; } }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-header h1 {
+            font-size: 52px;
+            margin-bottom: 20px; } }
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+          body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-header h1 {
+            font-size: 55px;
+            margin-bottom: 40px; } }
+        @media screen and (min-width: 1200px) and (max-width: 1400px) {
+          body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-header h1 {
+            font-size: 55px;
+            margin-bottom: 40px; } }
+        @media screen and (min-width: 1400px) {
+          body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-header h1 {
+            font-size: 60px;
+            margin-bottom: 40px; } }
+      body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks {
+        margin-bottom: 40px; }
+        @media screen and (max-width: 992px) {
+          body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks {
+            padding: 0 30px; } }
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+          body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks {
+            height: 400px; } }
+        @media screen and (min-width: 1200px) and (max-width: 1400px) {
+          body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks {
+            height: 400px; } }
+        @media screen and (min-width: 1400px) {
+          body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks {
+            height: 400px; } }
+        body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-header {
+          color: white;
+          margin-bottom: 20px;
+          text-transform: uppercase; }
+          @media screen and (max-width: 320px) {
+            body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-header h1 {
+              font-size: 22px;
+              margin-bottom: 22px; } }
+          @media screen and (min-width: 320px) and (max-width: 468px) {
+            body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-header h1 {
+              font-size: 23px;
+              margin-bottom: 22px; } }
+          @media screen and (min-width: 468px) and (max-width: 768px) {
+            body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-header h1 {
+              font-size: 25px;
+              margin-bottom: 22px; } }
+          @media screen and (min-width: 768px) and (max-width: 992px) {
+            body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-header h1 {
+              font-size: 25px;
+              margin-bottom: 22px; } }
+          @media screen and (min-width: 992px) and (max-width: 1200px) {
+            body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-header h1 {
+              font-size: 27px;
+              margin-bottom: 22px; } }
+          @media screen and (min-width: 1200px) and (max-width: 1400px) {
+            body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-header h1 {
+              font-size: 29px;
+              margin-bottom: 25px; } }
+          @media screen and (min-width: 1400px) {
+            body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-header h1 {
+              font-size: 30px;
+              margin-bottom: 25px; } }
+        body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body {
+          height: 320px;
+          border: 2px solid white;
+          border-radius: 10px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center; }
+          body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .section-counter {
+            text-align: center; }
+            @media screen and (min-width: 1200px) {
+              body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .section-counter {
+                margin: 5px; } }
+            @media screen and (max-width: 1200px) {
+              body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .section-counter {
+                margin: 2px; } }
+            body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .section-counter h3 {
+              margin-top: 0 !important;
+              font-family: var(--header-font);
+              color: white;
+              font-weight: bolder; }
+              @media screen and (max-width: 320px) {
+                body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .section-counter h3 {
+                  font-size: 16px; } }
+              @media screen and (min-width: 320px) and (max-width: 468px) {
+                body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .section-counter h3 {
+                  font-size: 16px; } }
+              @media screen and (min-width: 468px) and (max-width: 768px) {
+                body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .section-counter h3 {
+                  font-size: 18px; } }
+              @media screen and (min-width: 768px) and (max-width: 992px) {
+                body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .section-counter h3 {
+                  font-size: 20px; } }
+              @media screen and (min-width: 992px) and (max-width: 1200px) {
+                body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .section-counter h3 {
+                  font-size: 22px; } }
+              @media screen and (min-width: 1200px) and (max-width: 1400px) {
+                body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .section-counter h3 {
+                  font-size: 23px; } }
+              @media screen and (min-width: 1400px) {
+                body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .section-counter h3 {
+                  font-size: 24px; } }
+          body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .table-view {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 20px 0; }
+            @media screen and (max-width: 320px) {
+              body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .table-view table {
+                font-size: 12px; } }
+            @media screen and (min-width: 320px) and (max-width: 468px) {
+              body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .table-view table {
+                font-size: 13px; } }
+            @media screen and (min-width: 468px) and (max-width: 768px) {
+              body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .table-view table {
+                font-size: 15px; } }
+            @media screen and (min-width: 768px) and (max-width: 992px) {
+              body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .table-view table {
+                font-size: 17px; } }
+            @media screen and (min-width: 992px) and (max-width: 1200px) {
+              body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .table-view table {
+                font-size: 18px; } }
+            @media screen and (min-width: 1200px) and (max-width: 1400px) {
+              body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .table-view table {
+                font-size: 19px; } }
+            @media screen and (min-width: 1400px) {
+              body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .table-view table {
+                font-size: 20px; } }
+            body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .table-view table .col-desc {
+              font-family: var(--open-sans) !important; }
+            body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .table-view table td {
+              color: white;
+              border-top: 0 !important; }
+            body #admin-panel .admin-panel-container .admin-panel-content .admin-panel-blocks .admin-panel-statistic .admin-panel-statistic-body .table-view img {
+              cursor: pointer; }
+    body #admin-panel .admin-panel-container .admin-panel-footer {
+      width: 100%; }
+      body #admin-panel .admin-panel-container .admin-panel-footer .admin-panel-footer-header h1 {
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center; }
+        @media screen and (max-width: 320px) {
+          body #admin-panel .admin-panel-container .admin-panel-footer .admin-panel-footer-header h1 {
+            font-size: 30px;
+            margin-bottom: 22px; } }
+        @media screen and (min-width: 320px) and (max-width: 468px) {
+          body #admin-panel .admin-panel-container .admin-panel-footer .admin-panel-footer-header h1 {
+            font-size: 30px;
+            margin-bottom: 22px; } }
+        @media screen and (min-width: 468px) and (max-width: 768px) {
+          body #admin-panel .admin-panel-container .admin-panel-footer .admin-panel-footer-header h1 {
+            font-size: 31px;
+            margin-bottom: 22px; } }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          body #admin-panel .admin-panel-container .admin-panel-footer .admin-panel-footer-header h1 {
+            font-size: 31px;
+            margin-bottom: 22px; } }
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+          body #admin-panel .admin-panel-container .admin-panel-footer .admin-panel-footer-header h1 {
+            font-size: 32px;
+            margin-bottom: 22px; } }
+        @media screen and (min-width: 1200px) and (max-width: 1400px) {
+          body #admin-panel .admin-panel-container .admin-panel-footer .admin-panel-footer-header h1 {
+            font-size: 33px;
+            margin-bottom: 25px; } }
+        @media screen and (min-width: 1400px) {
+          body #admin-panel .admin-panel-container .admin-panel-footer .admin-panel-footer-header h1 {
+            font-size: 34px;
+            margin-bottom: 27px; } }
+      body #admin-panel .admin-panel-container .admin-panel-footer .admin-panel-slider {
+        width: 100%;
+        height: 280px;
+        overflow: scroll;
+        overflow-y: hidden;
+        padding: 0;
+        margin: 0; }
+        body #admin-panel .admin-panel-container .admin-panel-footer .admin-panel-slider .slider-elements {
+          width: 2300px;
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: row;
+          justify-content: center;
+          height: 250px;
+          overflow-x: hidden;
+          overflow-y: hidden; }
+          body #admin-panel .admin-panel-container .admin-panel-footer .admin-panel-slider .slider-elements img {
+            margin: 0 15px; }
+      body #admin-panel .admin-panel-container .admin-panel-footer .admin-panel-slider::-webkit-scrollbar {
+        width: 12px;
+        height: 11px; }
+      body #admin-panel .admin-panel-container .admin-panel-footer .admin-panel-slider::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 10px black;
+        border-radius: 10px; }
+      body #admin-panel .admin-panel-container .admin-panel-footer .admin-panel-slider::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: var(--orange);
+        box-shadow: inset 0 0 6px var(--orange-hover); }
   body footer {
     min-height: 300px;
     margin-top: 50px; }
@@ -1147,10 +1674,66 @@ body {
       border-radius: 100px;
       margin: 20px; } }
 
+.btn-white-border-short {
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  transition: 1s all; }
+  @media screen and (max-width: 320px) {
+    .btn-white-border-short {
+      padding: 7px 20px;
+      font-size: 11px;
+      text-transform: uppercase;
+      border-radius: 50px;
+      margin: 5px 0; } }
+  @media screen and (min-width: 320px) and (max-width: 468px) {
+    .btn-white-border-short {
+      padding: 12px 20px;
+      font-size: 13px;
+      text-transform: uppercase;
+      border-radius: 50px;
+      margin: 5px 0; } }
+  @media screen and (min-width: 468px) and (max-width: 768px) {
+    .btn-white-border-short {
+      padding: 12px 35px;
+      font-size: 15px;
+      text-transform: uppercase;
+      border-radius: 50px;
+      margin: 15px 0; } }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .btn-white-border-short {
+      padding: 12px 50px;
+      font-size: 18px;
+      text-transform: uppercase;
+      border-radius: 70px;
+      margin: 20px 0; } }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .btn-white-border-short {
+      padding: 12px 50px;
+      font-size: 19px;
+      text-transform: uppercase;
+      border-radius: 70px;
+      margin: 20px 0; } }
+  @media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .btn-white-border-short {
+      padding: 15px 60px;
+      font-size: 20px;
+      text-transform: uppercase;
+      border-radius: 90px;
+      margin: 20px 0; } }
+  @media screen and (min-width: 1400px) {
+    .btn-white-border-short {
+      padding: 15px 45px;
+      font-size: 20px;
+      text-transform: uppercase;
+      border-radius: 100px;
+      margin: 20px 0; } }
+
 .btn-white-border {
   border: 2px solid #fff;
   background: transparent;
-  color: #fff; }
+  color: #fff;
+  transition: 1s all; }
   @media screen and (max-width: 320px) {
     .btn-white-border {
       padding: 10px 20px;
@@ -1201,6 +1784,17 @@ body {
       border-radius: 100px;
       margin: 20px; } }
 
+.register-admin-btns .btn-white-border:hover {
+  background: transparent !important;
+  transition: 1s all; }
+
+.btn-white-border:hover, .btn-white-border-short:hover {
+  background: var(--orange);
+  transition: 1s all; }
+
+.btn-white-border-active {
+  background: var(--orange) !important; }
+
 .register-panel {
   background: whitesmoke;
   display: flex;
@@ -1231,42 +1825,40 @@ body {
 .custom-form-input {
   border: 2px solid #f0f0f0;
   border-radius: 100px;
+  width: 100%;
   color: #000; }
   @media screen and (max-width: 320px) {
     .custom-form-input {
-      width: 250px;
-      padding: 12px 40px;
-      font-size: 12px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 320px) and (max-width: 468px) {
-    .custom-form-input {
-      width: 300px;
-      padding: 12px 40px;
-      font-size: 12px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 468px) and (max-width: 768px) {
-    .custom-form-input {
-      width: 350px;
       padding: 12px 40px;
       font-size: 13px;
       margin-bottom: 10px; } }
-  @media screen and (min-width: 768px) and (max-width: 992px) {
+  @media screen and (min-width: 320px) and (max-width: 468px) {
     .custom-form-input {
-      width: 450px;
+      padding: 12px 40px;
+      font-size: 13px;
+      margin-bottom: 10px; } }
+  @media screen and (min-width: 468px) and (max-width: 768px) {
+    .custom-form-input {
       padding: 12px 40px;
       font-size: 15px;
       margin-bottom: 10px; } }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .custom-form-input {
+      padding: 12px 40px;
+      font-size: 18px;
+      margin-bottom: 10px; } }
   @media screen and (min-width: 992px) {
     .custom-form-input {
-      width: 500px;
       padding: 15px 40px;
-      font-size: 18px;
+      font-size: 23px;
       margin-bottom: 10px; } }
 
 .custom-form-input::placeholder {
-  color: #c8c8c8; }
+  color: #c8c8c8;
+  text-transform: uppercase; }
 
 .custom-form-group {
+  margin-top: 20px;
   position: relative; }
 
 .custom-submit-button {
@@ -1279,46 +1871,180 @@ body {
   @media screen and (max-width: 320px) {
     .custom-submit-button {
       padding: 12px 30px;
-      font-size: 12px;
+      font-size: 13px;
       text-transform: uppercase;
       border-radius: 50px; } }
   @media screen and (min-width: 320px) and (max-width: 468px) {
     .custom-submit-button {
       padding: 12px 30px;
-      font-size: 12px;
+      font-size: 13px;
       text-transform: uppercase;
       border-radius: 50px; } }
   @media screen and (min-width: 468px) and (max-width: 768px) {
     .custom-submit-button {
       padding: 12px 30px;
-      font-size: 12px;
+      font-size: 15px;
       text-transform: uppercase;
       border-radius: 50px; } }
   @media screen and (min-width: 768px) and (max-width: 992px) {
     .custom-submit-button {
-      padding: 12px 40px;
-      font-size: 15px;
+      padding: 14px 40px;
+      font-size: 16px;
       text-transform: uppercase;
       border-radius: 100px; } }
   @media screen and (min-width: 992px) and (max-width: 1200px) {
     .custom-submit-button {
-      padding: 15px 40px;
-      font-size: 18px;
+      padding: 17px 40px;
+      font-size: 21px;
       text-transform: uppercase;
       border-radius: 100px; } }
   @media screen and (min-width: 1200px) and (max-width: 1400px) {
     .custom-submit-button {
-      padding: 15px 40px;
-      font-size: 18px;
+      padding: 17px 40px;
+      font-size: 21px;
       text-transform: uppercase;
       border-radius: 100px; } }
   @media screen and (min-width: 1400px) {
     .custom-submit-button {
-      padding: 15px 40px;
-      font-size: 18px;
+      padding: 16px 40px;
+      font-size: 22px;
       text-transform: uppercase;
       border-radius: 100px; } }
 
+.custom-form-group h2 {
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 20px; }
+
+.register-form-group input[type="checkbox"] {
+  overflow: hidden; }
+
+.register-form-group .custom-submit-button {
+  position: static !important; }
+
 a {
-  text-decoration: underline;
+  text-decoration: none;
   color: white; }
+
+a:hover {
+  color: white; }
+
+select {
+  color: #c8c8c8; }
+
+.btn-search {
+  background: transparent;
+  border: 0px solid black;
+  position: absolute;
+  top: 17px;
+  right: 40px; }
+
+.btn-search img {
+  position: absolute; }
+
+.custom-form-input-search {
+  border: 2px solid #f0f0f0;
+  border-radius: 100px;
+  width: 100%;
+  color: #000; }
+  @media screen and (max-width: 320px) {
+    .custom-form-input-search {
+      padding: 12px 40px;
+      font-size: 13px;
+      margin-bottom: 10px; } }
+  @media screen and (min-width: 320px) and (max-width: 468px) {
+    .custom-form-input-search {
+      padding: 12px 40px;
+      font-size: 13px;
+      margin-bottom: 10px; } }
+  @media screen and (min-width: 468px) and (max-width: 768px) {
+    .custom-form-input-search {
+      padding: 12px 40px;
+      font-size: 15px;
+      margin-bottom: 10px; } }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .custom-form-input-search {
+      padding: 12px 40px;
+      font-size: 18px;
+      margin-bottom: 10px; } }
+  @media screen and (min-width: 992px) {
+    .custom-form-input-search {
+      padding: 15px 40px;
+      font-size: 19px;
+      margin-bottom: 10px; } }
+
+.section-counter {
+  margin-bottom: 30px; }
+  .section-counter .counter {
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-radius: 100px; }
+    .section-counter .counter .counter-description {
+      margin-top: 5px;
+      margin-left: 5px;
+      position: absolute;
+      width: 110px;
+      height: 110px;
+      border-radius: 100px;
+      background: black; }
+
+#container {
+  margin: 20px;
+  width: 120px;
+  height: 120px;
+  position: relative; }
+
+.circular-progress-bar {
+  position: relative;
+  margin: 0 auto;
+  z-index: 3; }
+
+.progress-percentage, .progress-text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.progress-text {
+  color: #fff;
+  font-family: var(--open-sans) !important; }
+  @media screen and (max-width: 500px) {
+    .progress-text {
+      font-size: 25px; } }
+  @media screen and (min-width: 500px) {
+    .progress-text {
+      font-size: 31px; } }
+
+@media screen and (max-width: 600px) {
+  .progress-bar-background {
+    width: 112px;
+    height: 112px;
+    margin: 14px;
+    background: transparent;
+    border: 7px solid #ccc;
+    position: absolute;
+    z-index: -2;
+    border-radius: 100px; } }
+
+@media screen and (min-width: 600px) {
+  .progress-bar-background {
+    width: 140px;
+    height: 140px;
+    margin: 15px;
+    background: transparent;
+    border: 5px solid #ccc;
+    position: absolute;
+    z-index: -2;
+    border-radius: 100px; } }
+
+.my-progress-bar {
+  position: relative;
+  z-index: 5; }
+
+@media screen and (max-width: 450px) {
+  #admin-panel-statistic {
+    height: auto !important;
+    flex-direction: column !important; } }
