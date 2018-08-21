@@ -10,9 +10,13 @@ $(document).ready(function () {
     })
 })
 
+$(document).ready(function () {
 
+})
 
 (function ( $ ) {
+
+
 
     var global_settings = {};
 

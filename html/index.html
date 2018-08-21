@@ -9,12 +9,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="../js/js-functions.js"></script>
     <script src="../bootstrap/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 </head>
 <body>
     <header>
         <div class="wrapper">
+            <div class="btn-login-menu"><button class="login-menu-collapse-button"><img src="/img/login.png"/></button> </div>
+            <div class="logging-menu-rwd">
+                <ul>
+                    <li><img src="../img/koszyk.png"/> SKLEP </li>
+                    <li><img src="../img/user.png"/> LOGOWANIE</li>
+                </ul>
+            </div>
             <div class="logo">
                 <img class="logo-img" src="../img/logo.png"/>
             </div>
@@ -26,26 +33,30 @@
                         </button>
                     </div>
                     <div class="main-menu-collapse-list" id="main-menu-list">
-                        <ul class="main-menu-list">
-                            <li class="special">KUP TERAZ!</li>
-                            <li>PRODUKTY</li>
-                            <li>PARTNERZY</li>
-                            <li>KONTAKT</li>
-                            <li>ZAREJESTRUJ SIE</li>
-                        </ul>
+                        <div class="main-menu-list">
+                            <ul>
+                                <li class="special">KUP TERAZ!</li>
+                                <li>PRODUKTY</li>
+                                <li>PARTNERZY</li>
+                                <li>KONTAKT</li>
+                                <li>ZAREJESTRUJ SIE</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="logging-menu">
-                    <ul class="logging-menu-list">
-                        <li><img src="../img/koszyk.png"/> SKLEP </li>
-                        <li><img src="../img/user.png"/> LOGOWANIE</li>
-                    </ul>
+                    <div  class="logging-menu-list">
+                        <ul>
+                            <li><img src="../img/koszyk.png"/> SKLEP </li>
+                            <li><img src="../img/user.png"/> LOGOWANIE</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
     </header>
     <section id="slider">
-        <img class="slider-img" src="../img/slider.png" width="100%"/>
         <div class="slider-container container">
             <div class="slider-greeting-header">
                 <h1>Tekst powitalny</h1>
@@ -86,7 +97,7 @@
                         <div class="video-block col-md-12" id="block1">
                             <div class="video-block-list">
                                 <ul>
-                                    <li><a href="#">Film1</a></li>
+                                    <li>Film1</li>
                                     <li>Film2</li>
                                     <li>Film3</li>
                                     <li>Film4</li>
@@ -166,7 +177,7 @@
         <div class="footer-container">
             <div class="container">
                 <div class="col-md-12">
-                    <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="col-md-2 col-sm-2 col-xs-3">
                         <h1>PRODUCKTY</h1>
                         <ul>
                             <li>Informacje</li>
@@ -175,7 +186,7 @@
                             <li>Pakiety</li>
                         </ul>
                     </div>
-                    <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="col-md-2 col-sm-2 col-xs-3">
                         <h1>PARTNERZY</h1>
                         <ul>
                             <li>Mapa</li>
@@ -185,13 +196,13 @@
                             <li>Nazwa firmy</li>
                         </ul>
                     </div>
-                    <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="col-md-2 col-sm-2 col-xs-3">
                         <h1>SKLEP</h1>
                         <ul>
                             <li>Sklep</li>
                         </ul>
                     </div>
-                    <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="col-md-2 col-sm-2 col-xs-3">
                         <h1>KONTAKT</h1>
                         <ul>
                             <li>NAZWA</li>
@@ -201,8 +212,8 @@
                             <li>Mapa</li>
                         </ul>
                     </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4 footer-banner">
-                        <div class="footer-logo">
+                    <div class="col-md-4 col-sm-4 col-xs-12 footer-banner">
+                        <div class="footer-logo text-center">
                             <img src="../img/logo.png" width="50%"/>
                         </div>
 

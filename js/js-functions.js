@@ -10,16 +10,27 @@ $(window).on('load',function () {
 $(document).ready(function () {
 
     var collapse = true;
+    var login_collapse = true;
 
    $('.main-menu-collapse-btn').bind('click',function () {
         if(collapse == true) {
-            $('.main-menu-list').show('slide', {direction: 'up'},1000);
+            $('#main-menu-list ul').show('slide', {direction: 'up'},1000);
             collapse = false;
         } else {
-            $('.main-menu-list').hide('slide', {direction: 'up'},1000);
+            $('#main-menu-list ul').hide('slide', {direction: 'up'},1000);
             collapse = true;
         }
    });
+
+   $('.login-menu-collapse-button').bind('click',function () {
+       if(login_collapse == true) {
+           $('.logging-menu-rwd').show('slide', {direction: 'right'},1000);
+           login_collapse = false;
+       } else {
+           $('.logging-menu-rwd').hide('slide', {direction: 'right'},1000);
+           login_collapse = true;
+       }
+   })
 
    activeVideoButtonFirst();
    $('.video-btn-fix').each(function () {
