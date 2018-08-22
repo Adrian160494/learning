@@ -8,6 +8,7 @@
 }
 html{
   --blue: #477c8b;
+  --blue-bright: #5f9f9f;
   --orange: #d78e44;
   --orange-hover: #fd9f4f;
   --brown: #544c4a;
@@ -3009,7 +3010,7 @@ select{
 
     .video-navigation{
       background: url('/img/section-background.png');
-      min-height: 150px;
+      min-height: 120px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -3020,16 +3021,19 @@ select{
             padding: 7px 10px;
             width: 90px !important;
             margin: 5px 5px !important;
+            font-size: 13px !important;
           }
           @media screen and (min-width: 320px) and (max-width: 468px){
             padding: 12px 10px;
             width: 90px !important;
             margin: 5px 5px !important;
+            font-size: 13px !important;
           }
           @media screen and (min-width: 468px) and (max-width: 768px){
             width: 140px !important;
             padding: 12px 25px;
             margin: 5px 5px !important;
+            font-size: 14px !important;
           }
           @media screen and (min-width: 768px) and (max-width: 992px){
             width: 200px !important;
@@ -3038,24 +3042,28 @@ select{
           @media screen and (min-width: 992px) and (max-width: 1200px){
             width: 200px !important;
             padding: 12px 50px;
+            font-size: 16px !important;
           }
           @media screen and (min-width: 1200px) and (max-width: 1400px){
             padding: 15px 40px;
             width: 200px !important;
+            font-size: 17px !important;
           }
           @media screen and (min-width: 1400px){
             width: 200px !important;
-            padding: 15px 30px  ;
+            padding: 15px 30px;
+            font-size: 18px !important;
           }
         }
       }
     }
     .video-wrapper{
       width:100%;
-      overflow: scroll;
-      overflow-y: hidden;
+      overflow: hidden;
+      position: relative;
       padding:0;
       margin:0;
+      border-bottom: 2px solid var(--blue);
       .video-player-slider{
         overflow: hidden;
         width: 5000px;
@@ -3065,78 +3073,76 @@ select{
           width: 420px;
         }
         .video-player{
+          transition: 2s all;
           float: left;
-          width: 840px;
+          @media screen and (max-width: 320px){
+            width: 320px;
+          }
+          @media screen and (min-width: 320px) and (max-width: 468px){
+            width: 320px;
+          }
+          @media screen and (min-width: 468px) and (max-width: 768px){
+            width: 480px;
+          }
+          @media screen and (min-width: 768px) and (max-width: 992px){
+            width: 700px;
+          }
+          @media screen and (min-width: 992px) and (max-width: 1200px){
+            width: 840px;
+          }
+          @media screen and (min-width: 1200px) and (max-width: 1400px){
+            width: 840px;
+          }
+          @media screen and (min-width: 1400px){
+            width: 840px;
+          }
           .video-player-header{
             h1{
               color:var(--blue);
               text-transform: uppercase;
               @media screen and (max-width: 320px){
-                font-size: 45px;
-                margin-bottom: 70px;
+                font-size: 25px;
               }
               @media screen and (min-width: 320px) and (max-width: 468px){
-                font-size: 45px;
-                margin-bottom: 70px;
+                font-size: 28px;
               }
               @media screen and (min-width: 468px) and (max-width: 768px){
-                font-size: 45px;
-                margin-bottom: 90px;
+                font-size: 30px;
               }
               @media screen and (min-width: 768px) and (max-width: 992px){
-                font-size: 50px;
-                margin-bottom: 140px;
+                font-size: 32px;
               }
               @media screen and (min-width: 992px) and (max-width: 1200px){
-                font-size: 55px;
-                margin-bottom: 160px;
+                font-size: 35px;
               }
               @media screen and (min-width: 1200px) and (max-width: 1400px){
-                font-size: 45px;
-
+                font-size: 35px;
               }
               @media screen and (min-width: 1400px){
-                font-size: 45px;
-
+                font-size: 37px;
               }
             }
             p, small {
               @media screen and (max-width: 320px){
                 font-size: 11px;
-                letter-spacing: 0.5px;
-                line-height: 20px;
-                margin-bottom: 30px;
               }
               @media screen and (min-width: 320px) and (max-width: 468px){
                 font-size: 13px;
-                letter-spacing: 0.5px;
-                line-height: 20px;
-                margin-bottom: 30px;
               }
               @media screen and (min-width: 468px) and (max-width: 768px){
                 font-size: 13px;
-                letter-spacing: 0.5px;
-                line-height: 20px;
-                margin-bottom: 30px;
               }
               @media screen and (min-width: 768px) and (max-width: 992px){
                 font-size: 15px;
-                letter-spacing: 0.5px;
-                line-height: 20px;
-                margin-bottom: 30px;
               }
               @media screen and (min-width: 992px) and (max-width: 1200px){
                 font-size: 16px;
-                letter-spacing: 1.5px;
-                line-height: 30px;
-                margin-bottom: 30px;
               }
               @media screen and (min-width: 1200px) and (max-width: 1400px){
-                font-size: 18px;
-                margin-bottom: 40px;
+                font-size: 14px;
               }
               @media screen and (min-width: 1400px){
-                font-size: 15px;
+                font-size: 14px;
 
               }
               font-family: var(--open-sans);
@@ -3146,9 +3152,125 @@ select{
           .video-player-body{
             padding: 30px 0;
           }
+          .video-player-footer{
+            .video-player-footer-description {
+              h3 {
+                color: var(--blue);
+                text-transform: uppercase;
+                @media screen and (max-width: 320px) {
+                  font-size: 15px;
+                }
+                @media screen and (min-width: 320px) and (max-width: 468px) {
+                  font-size: 15px;
+                }
+                @media screen and (min-width: 468px) and (max-width: 768px) {
+                  font-size: 15px;
+                }
+                @media screen and (min-width: 768px) and (max-width: 992px) {
+                  font-size: 20px;
+                }
+                @media screen and (min-width: 992px) and (max-width: 1200px) {
+                  font-size: 25px;
+                }
+                @media screen and (min-width: 1200px) and (max-width: 1400px) {
+                  font-size: 25px;
+                }
+                @media screen and (min-width: 1400px) {
+                  font-size: 25px;
+                }
+              }
+              p, small {
+                @media screen and (max-width: 320px) {
+                  font-size: 11px;
+                }
+                @media screen and (min-width: 320px) and (max-width: 468px) {
+                  font-size: 13px;
+                }
+                @media screen and (min-width: 468px) and (max-width: 768px) {
+                  font-size: 13px;
+                }
+                @media screen and (min-width: 768px) and (max-width: 992px) {
+                  font-size: 15px;
+                }
+                @media screen and (min-width: 992px) and (max-width: 1200px) {
+                  font-size: 16px;
+                }
+                @media screen and (min-width: 1200px) and (max-width: 1400px) {
+                  font-size: 18px;
+                }
+                @media screen and (min-width: 1400px) {
+                  font-size: 15px;
+                }
+                font-family: var(--open-sans);
+                color: var(--blue);
+              }
+            }
+            .video-player-test {
+              @media screen and (max-width: 992px){
+
+              }
+              @media screen and (min-width: 992px){
+                position: absolute;
+                bottom:15px;
+                right:0;
+              }
+              p > span {
+                @media screen and (max-width: 320px) {
+                  font-size: 12px;
+                }
+                @media screen and (min-width: 320px) and (max-width: 468px) {
+                  font-size: 13px;
+                }
+                @media screen and (min-width: 468px) and (max-width: 768px) {
+                  font-size: 13px;
+                }
+                @media screen and (min-width: 768px) and (max-width: 992px) {
+                  font-size: 14px;
+                }
+                @media screen and (min-width: 992px) and (max-width: 1200px) {
+                  font-size: 15px;
+                }
+                @media screen and (min-width: 1200px) and (max-width: 1400px) {
+                  font-size: 16px;
+                }
+                @media screen and (min-width: 1400px) {
+                  font-size: 17px;
+                }
+                font-family: var(--header-font);
+                color: var(--blue-bright);
+                opacity: 0.5;
+                text-transform: uppercase;
+              }
+            }
+          }
         }
       }
     }
+  }
+}
+
+.btn-orange-video-test{
+  margin: 5px 10px;
+  @media screen and (max-width: 320px){
+    width: 90px !important;
+  }
+  @media screen and (min-width: 320px) and (max-width: 468px){
+    width: 90px !important;
+  }
+  @media screen and (min-width: 468px) and (max-width: 768px){
+    width: 140px !important;
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px){
+    width: 200px !important;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px){
+    width: 200px !important;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1400px){
+    width: 200px !important;
+  }
+  @media screen and (min-width: 1400px){
+    width: 200px !important;
   }
 }
 
@@ -3177,7 +3299,7 @@ select{
     padding: 10px 40px;
   }
   @media screen and (min-width: 1400px){
-    padding: 10px 30px  ;
+    padding: 10px 30px;
   }
 
   &:hover{
@@ -3224,14 +3346,18 @@ select{
 .navigation-panel{
   position: absolute;
   width:100%;
-  top:400px;
+  top: 50%;
   z-index: 10;
 }
 
-.navigation-right{
+.navigation-left{
   transform: rotate(180deg);
 }
 
 .navigation-left, .navigation-right{
   cursor:pointer;
+}
+
+.footer-text{
+  position: relative;
 }

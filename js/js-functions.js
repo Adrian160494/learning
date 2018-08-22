@@ -5,12 +5,6 @@
 $(window).on('load',function () {
      changeAdventageView();
     addHandleCheckboxesInRegisterAdmin();
-
-
-    $('button.translate').on('click',function () {
-        console.log('translate');
-        $('.video-player-slider').css('transform','translateX(400px)');
-    })
 })
 
 $(document).ready(function () {
