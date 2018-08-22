@@ -14,12 +14,7 @@ $(window).on('load',function () {
 })
 
 $(document).ready(function () {
-    var windowWidth = $(window).outerWidth()/2;
-    var actualVideoPlayerWidth = $('.video-player').outerWidth()/2;
-    var startPosition = windowWidth - actualVideoPlayerWidth;
-    var actualVideoPlayer = 0;
 
-    $('.video-player-slider').css('transform','translateX('+startPosition+'px)');
     var collapse = true;
     var login_collapse = true;
 
@@ -193,9 +188,4 @@ function addHandleCheckboxesInRegisterAdmin(){
 
         })
     })
-}
-
-
-function sliderVideoPlayer() {
-
 }
