@@ -4,151 +4,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width; initial-scale=1"/>
     <title>Title</title>
-    <link rel="stylesheet" href="bootstrap/bootstrap-3.3.7-dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="js/js-functions.js"></script>
-    <script src="js/plugin.js"></script>
-    <script src="bootstrap/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="../js/js-functions.js"></script>
+    <script src="../bootstrap/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 </head>
 <body>
-<header>
-    <div class="wrapper">
-        <div class="logo">
-            <img class="logo-img" src="../img/logo.png"/>
-        </div>
-        <div class="menu-wrapper">
-            <div class="main-menu">
-                <div class="main-menu-collapse-btns">
-                    <button class="main-menu-collapse-btn pull-right">
-                        <i class="fas fa-bars"></i>
-                    </button>
+    <header>
+        <div class="wrapper">
+            <div class="btn-login-menu"><button class="login-menu-collapse-button"><img src="/img/login.png"/></button> </div>
+            <div class="logging-menu-rwd">
+                <ul>
+                    <li><img src="../img/koszyk.png"/> SKLEP </li>
+                    <li><img src="../img/user.png"/> LOGOWANIE</li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img class="logo-img" src="../img/logo.png"/>
+            </div>
+            <div class="menu-wrapper">
+                <div class="main-menu">
+                    <div class="main-menu-collapse-btns">
+                        <button class="main-menu-collapse-btn pull-right">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <div class="main-menu-collapse-list" id="main-menu-list">
+                        <div class="main-menu-list">
+                            <ul>
+                                <li class="special">KUP TERAZ!</li>
+                                <li>PRODUKTY</li>
+                                <li>PARTNERZY</li>
+                                <li>KONTAKT</li>
+                                <li>ZAREJESTRUJ SIE</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="main-menu-collapse-list" id="main-menu-list">
-                    <div class="main-menu-list">
+                <div class="logging-menu">
+                    <div  class="logging-menu-list">
                         <ul>
-                            <li>Filmy</li>
-                            <li>Twoje postępy</li>
-                            <li>Zarządzanie</li>
-                            <li>Ustawienia</li>
+                            <li><img src="../img/koszyk.png"/> SKLEP </li>
+                            <li><img src="../img/user.png"/> LOGOWANIE</li>
                         </ul>
                     </div>
-                </div>
-            </div>
-            <div class="logging-menu">
-                <div class="logging-menu-list">
-                    <ul>
-                        <li><img src="/img/koszyk.png"/> SKLEP </li>
-                        <li><img src="/img/scenary.png" width="18px"/>Scenariusze</li>
-                        <li><img src="/img/user.png" width="18px"/> Wyloguj siE</li>
-                    </ul>
-                </div>
 
+                </div>
             </div>
         </div>
-    </div>
-
-<main>
-    <section id="admin-panel">
-        <div class="admin-panel-container">
-            <div class="container admin-panel-content">
-                <div class="admin-panel-header text-left">
-                    <h1> Cześć, imię</h1>
-                </div>
-                <div class="admin-panel-blocks">
-                    <div class="col-md-6 admin-panel-statistic">
-                       <div class="admin-panel-statistic-header" >
-                           <h1>Twoje wyniki</h1>
-                       </div>
-                        <div class="admin-panel-statistic-body"  id="admin-panel-statistic">
-                            <div class="section-counter">
-                                <div class="row">
-                                    <div class="my-progress-bar" id="my-progress-bar1"> <div class="progress-bar-background"></div></div>
-                                    <h3>LEAN</h3>
-                                </div>
-
-                            </div>
-                            <div class="section-counter">
-                                <div class="row">
-                                    <div class="my-progress-bar" id="my-progress-bar2"> <div class="progress-bar-background"></div></div>
-                                    <h3>SIX SIGMA</h3>
-                                </div>
-
-                            </div>
-                            <div class="section-counter">
-                                <div class="row">
-                                    <div class="my-progress-bar" id="my-progress-bar3"> <div class="progress-bar-background"></div></div>
-                                    <h3>JAKOŚĆ</h3>
-                                </div>
-
-                            </div>
-                        </div>
+    </header>
+    <section id="video-player">
+        <div class="video-player-container">
+            <div class="video-navigation">
+                <div class="video-body-btns">
+                    <div class="video-btn">
+                        <button id="video-player-btn1" data-toggle="block1" class="btn-white-border-short btn-not-hover">LEAN<div class="special-video-button"></div></button>
                     </div>
-                    <div class="col-md-6 admin-panel-statistic">
-                        <div class="admin-panel-statistic-header">
-                            <h1>Wyniki użytkowników</h1>
-                        </div>
-                        <div class="admin-panel-statistic-body">
-                              <div class="table-view text-center">
-                                  <table class="table">
-                                      <thead>
-                                      <tr>
-                                          <td></td><td>LEAN</td><td>SIX SIGMA</td><td>JAKOŚĆ</td>
-                                      </tr>
-                                      </thead>
-                                      <tbody>
-                                      <tr>
-                                          <td>Józef</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td>
-                                      </tr>
-                                      <tr>
-                                          <td>Józef</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td>
-                                      </tr>
-                                      <tr>
-                                          <td>Józef</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td>
-                                      </tr>
-                                      <tr>
-                                          <td>Józef</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td>
-                                      </tr>
-                                      <tr>
-                                          <td>Józef</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td>
-                                      </tr>
-
-                                      </tbody>
-                                  </table>
-                                  <div class="drop-down-menu text-center">
-                                      <img src="img/drop-down-arrow.png"/>
-                                  </div>
-                              </div>
-                        </div>
+                    <div class="video-btn">
+                        <button id="video-player-btn2" data-toggle="block2"  class="btn-white-border-short btn-not-hover">SIX SIGMA<div class="special-video-button"></div></button>
+                    </div>
+                    <div class="video-btn">
+                        <button id="video-player-btn3" data-toggle="block3" class="btn-white-border-short btn-not-hover">JAKOSC<div class="special-video-button"></div></button>
                     </div>
                 </div>
             </div>
-            <div class="admin-panel-footer">
-                <div class="admin-panel-footer-header">
-                    <h1>Kontynuuj lekcje</h1>
+            <div class="video-wrapper">
+                <div class="navigation-panel">
+                    <div class="navigation-left pull-left">
+                        <img src="/img/left.png"/>
+                    </div>
+                    <div class="navigation-right pull-right">
+                        <img src="/img/left.png"/>
+                    </div>
                 </div>
-                <div class="admin-panel-slider">
-                    <div class="slider-elements">
-                        <img src="img/slider/slide1.png"/>
-                        <img src="img/slider/slide2.png"/>
-                        <img src="img/slider/slide3.png"/>
-                        <img src="img/slider/slide4.png"/>
-                        <img src="img/slider/slide5.png"/>
+                <div class="video-player-slider">
+                    <button class="btn btn-block btn-primary translate">Translate</button>
+                    <div class="video-player-empty">
+                    </div>
+                    <div class="video-player">
+                        <div class="video-player-header">
+                            <h1>01 Tytuł filmu</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        </div>
+                        <div class="video-player-body">
+                            <img src="/img/slider/slide1.png" width="100%"/>
+                        </div>
+                        <div class="video-player-footer">
+                            <div class="col-md-12">
+                                <div class="col-md-8">
+                                    <h3>Informacje</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                    <p><span>Załączniki:</span><button class="btn-white-border btn-blue-border">Dodaj załączniki(PDF,EXCEL)</button></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p><span>Do testu możesz podejść dopiero po obejrzeniu video</span>
+                                        <button class="btn-white-border btn-orange-video-test">Zrób test</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-player">
+                        <div class="video-player-header">
+                            <h1>02 Tytuł filmu</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        </div>
+                        <div class="video-player-body">
+                            <img src="/img/slider/slide2.png" width="100%"/>
+                        </div>
+                        <div class="video-player-footer">
+                            <div class="col-md-12">
+                                <div class="col-md-8">
+                                    <h3>Informacje</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                    <p><span>Załączniki:</span><button class="btn-white-border btn-blue-border">Dodaj załączniki(PDF,EXCEL)</button></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p><span>Do testu możesz podejść dopiero po obejrzeniu video</span>
+                                        <button class="btn-white-border btn-orange-video-test">Zrób test</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-player">
+                        <div class="video-player-header">
+                            <h1>03 Tytuł filmu</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        </div>
+                        <div class="video-player-body">
+                            <img src="/img/slider/slide3.png" width="100%"/>
+                        </div>
+                        <div class="video-player-footer">
+                            <div class="col-md-12">
+                                <div class="col-md-8">
+                                    <h3>Informacje</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                    <p><span>Załączniki:</span><button class="btn-white-border btn-blue-border">Dodaj załączniki(PDF,EXCEL)</button></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p><span>Do testu możesz podejść dopiero po obejrzeniu video</span>
+                                        <button class="btn-white-border btn-orange-video-test">Zrób test</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-player">
+                        <div class="video-player-header">
+                            <h1>04 Tytuł filmu</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        </div>
+                        <div class="video-player-body">
+                            <img src="/img/slider/slide4.png" width="100%"/>
+                        </div>
+                        <div class="video-player-footer">
+                            <div class="col-md-12">
+                                <div class="col-md-8">
+                                    <h3>Informacje</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                    <p><span>Załączniki:</span><button class="btn-white-border btn-blue-border">Dodaj załączniki(PDF,EXCEL)</button></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p><span>Do testu możesz podejść dopiero po obejrzeniu video</span>
+                                        <button class="btn-white-border btn-orange-video-test">Zrób test</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-</main>
-<footer>
-    <div class="footer-container">
-        <div class="container">
-            <div class="col-md-12">
-                <div class="col-md-8 col-sm-12 col-xs-12 footer-lists">
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                        <h1>PRODUKTY</h1>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="col-md-2 col-sm-2 col-xs-3">
+                        <h1>PRODUCKTY</h1>
                         <ul>
                             <li>Informacje</li>
                             <li>O produkcie</li>
@@ -156,7 +190,7 @@
                             <li>Pakiety</li>
                         </ul>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div class="col-md-2 col-sm-2 col-xs-3">
                         <h1>PARTNERZY</h1>
                         <ul>
                             <li>Mapa</li>
@@ -166,13 +200,13 @@
                             <li>Nazwa firmy</li>
                         </ul>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-3 text-center">
+                    <div class="col-md-2 col-sm-2 col-xs-3">
                         <h1>SKLEP</h1>
                         <ul>
                             <li>Sklep</li>
                         </ul>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div class="col-md-2 col-sm-2 col-xs-3">
                         <h1>KONTAKT</h1>
                         <ul>
                             <li>NAZWA</li>
@@ -182,19 +216,24 @@
                             <li>Mapa</li>
                         </ul>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-12 col-xs-12 footer-banner">
-                    <div class="footer-logo">
-                        <img src="../img/logo.png" width="50%"/>
-                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 footer-banner">
+                        <div class="footer-logo text-center">
+                            <img src="../img/logo.png" width="50%"/>
+                        </div>
 
-                    <div class="footer-text">
-                        <p>Opex Academy 2018</p>
+                        <div class="footer-text">
+                            <p>Opex Academy 2018</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js'></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slider();
+        });
+    </script>
 </body>
 </html>

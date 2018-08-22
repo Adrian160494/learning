@@ -4,11 +4,22 @@
 
 $(window).on('load',function () {
      changeAdventageView();
-    addHandleCheckboxesInRegisterAdmin()
+    addHandleCheckboxesInRegisterAdmin();
+
+
+    $('button.translate').on('click',function () {
+        console.log('translate');
+        $('.video-player-slider').css('transform','translateX(400px)');
+    })
 })
 
 $(document).ready(function () {
+    var windowWidth = $(window).outerWidth()/2;
+    var actualVideoPlayerWidth = $('.video-player').outerWidth()/2;
+    var startPosition = windowWidth - actualVideoPlayerWidth;
+    var actualVideoPlayer = 0;
 
+    $('.video-player-slider').css('transform','translateX('+startPosition+'px)');
     var collapse = true;
     var login_collapse = true;
 
@@ -74,8 +85,7 @@ $(document).ready(function() {
                 addCounters();
                 flag = true;
             }
-        })
-
+        });
 
 });
 
@@ -183,4 +193,9 @@ function addHandleCheckboxesInRegisterAdmin(){
 
         })
     })
+}
+
+
+function sliderVideoPlayer() {
+
 }

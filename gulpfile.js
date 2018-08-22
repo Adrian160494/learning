@@ -12,7 +12,7 @@ gulp.task('server',function () {
         server: './'
     });
 
-    gulp.watch('./index.html',['reload']);
+    gulp.watch('./admin_page.html',['reload']);
     gulp.watch('./css/*.scss',['sass','reload']);
 });
 

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/js-functions.js"></script>
+    <script src="../js/plugin.js"></script>
+    <script src="../bootstrap/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <div class="logo">
+            <img class="logo-img" src="../img/logo.png"/>
+        </div>
+        <div class="menu-wrapper">
+            <div class="main-menu">
+                <div class="main-menu-collapse-btns">
+                    <button class="main-menu-collapse-btn pull-right">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="main-menu-collapse-list" id="main-menu-list">
+                    <div class="main-menu-list">
+                        <ul>
+                            <li>Filmy</li>
+                            <li>Twoje postępy</li>
+                            <li>Zarządzanie</li>
+                            <li>Ustawienia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logging-menu">
+                <div class="logging-menu-list">
+                    <ul>
+                        <li><img src="/img/koszyk.png"/> SKLEP </li>
+                        <li><img src="/img/scenary.png" width="18px"/>Scenariusze</li>
+                        <li><img src="/img/user.png" width="18px"/> Wyloguj siE</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<main>
+    <section id="admin-panel">
+        <div class="admin-panel-container">
+            <div class="container admin-panel-content">
+                <div class="admin-panel-header text-left">
+                    <h1> Cześć, imię</h1>
+                </div>
+                <div class="admin-panel-blocks">
+                    <div class="col-md-6 admin-panel-statistic">
+                       <div class="admin-panel-statistic-header" >
+                           <h1>Twoje wyniki</h1>
+                       </div>
+                        <div class="admin-panel-statistic-body"  id="admin-panel-statistic">
+                            <div class="section-counter">
+                                <div class="row">
+                                    <div class="my-progress-bar" id="my-progress-bar1"> <div class="progress-bar-background"></div></div>
+                                    <h3>LEAN</h3>
+                                </div>
+
+                            </div>
+                            <div class="section-counter">
+                                <div class="row">
+                                    <div class="my-progress-bar" id="my-progress-bar2"> <div class="progress-bar-background"></div></div>
+                                    <h3>SIX SIGMA</h3>
+                                </div>
+
+                            </div>
+                            <div class="section-counter">
+                                <div class="row">
+                                    <div class="my-progress-bar" id="my-progress-bar3"> <div class="progress-bar-background"></div></div>
+                                    <h3>JAKOŚĆ</h3>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 admin-panel-statistic">
+                        <div class="admin-panel-statistic-header">
+                            <h1>Wyniki użytkowników</h1>
+                        </div>
+                        <div class="admin-panel-statistic-body">
+                              <div class="table-view text-center">
+                                  <table class="table">
+                                      <thead>
+                                      <tr>
+                                          <td></td><td>LEAN</td><td>SIX SIGMA</td><td>JAKOŚĆ</td>
+                                      </tr>
+                                      </thead>
+                                      <tbody>
+                                      <tr>
+                                          <td>Józef</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Józef</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Józef</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Józef</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Józef</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td><td class="col-desc">27/30</td>
+                                      </tr>
+
+                                      </tbody>
+                                  </table>
+                                  <div class="drop-down-menu text-center">
+                                      <img src="../img/drop-down-arrow.png"/>
+                                  </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="admin-panel-footer">
+                <div class="admin-panel-footer-header">
+                    <h1>Kontynuuj lekcje</h1>
+                </div>
+                <div class="admin-panel-slider">
+                    <div class="slider-elements">
+                        <img src="../img/slider/slide1.png"/>
+                        <img src="../img/slider/slide2.png"/>
+                        <img src="../img/slider/slide3.png"/>
+                        <img src="../img/slider/slide4.png"/>
+                        <img src="../img/slider/slide5.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer-container">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="col-md-8 col-sm-12 col-xs-12 footer-lists">
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <h1>PRODUKTY</h1>
+                        <ul>
+                            <li>Informacje</li>
+                            <li>O produkcie</li>
+                            <li>Cena</li>
+                            <li>Pakiety</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <h1>PARTNERZY</h1>
+                        <ul>
+                            <li>Mapa</li>
+                            <li>Nazwa firmy</li>
+                            <li>Nazwa firmy</li>
+                            <li>Nazwa firmy</li>
+                            <li>Nazwa firmy</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3 text-center">
+                        <h1>SKLEP</h1>
+                        <ul>
+                            <li>Sklep</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <h1>KONTAKT</h1>
+                        <ul>
+                            <li>NAZWA</li>
+                            <li>ul.Nazwa ulicy 12</li>
+                            <li>00-000 Miasto</li>
+                            <br/>
+                            <li>Mapa</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 footer-banner">
+                    <div class="footer-logo">
+                        <img src="../img/logo.png" width="50%"/>
+                    </div>
+
+                    <div class="footer-text">
+                        <p>Opex Academy 2018</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
